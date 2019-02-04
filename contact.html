@@ -1,71 +1,67 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Contact</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="tex/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+  <title>Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css">
 </head>
 <body>
-    <header id="masthead">
-    <div class="container">
-        <a href="index.html" id="logo">Sally Cardinale</a>
-            <nav>
-                <a href="index.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+
+  <ul class="topnav">
+    <li><a class="active" href="index.html"><h1>Sally Cardinale</h1></a></li>
+    <li class="right"><a href="portfolio.html">Portfolio</a></li>
+    <li class="right"><a href="contact.html">Contact</a></li>
+    <li class="right"><a href="index.html">About</a></li>
+  </ul>
+
+<div class="row">
+  <div class="col-3 menu">
+  </div>
+
+    <div class="col-6">
+      <h1>Contact</h1>
+      <hr>
+      <form id="contact-form">
+        <ul>
+            <li>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name"
+                placeholder=""
+                required="required">
+            </li>
+
+            <li>
+                 <label for="email">Email</label>
+                 <input type="text" name="email" id="email"
+                 placeholder=""
+                 required="required">
+             </li>
+
+             <li>
+                 <label for="message">Message</label>
+                 <textarea id="message" name="message"
+                 placeholder=""
+                 required="required"></textarea>
+             </li>
+        </ul>
+        <input type="submit" name="submit">
+    </form>
     </div>
-    </header>
+  </section>
 
-    <div id="main-container" class="container">
-        <section class="main-section">
-            <h1>Contact</h1>
-
-           <form id="contact-form">
-               <ul>
-                   <li>
-                       <label for="name">Name</label>
-                       <input type="text" name="name" id="name"
-                       placeholder=""
-                       required="required">
-                   </li>
-
-                   <li>
-                        <label for="email">Email</label>
-                        <input type="text" name="email" id="email"
-                        placeholder=""
-                        required="required">
-                    </li>
-
-                    <li>
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message"
-                        placeholder=""
-                        required="required"></textarea>
-                    </li>
-               </ul>
-               <input type="submit" name="submit">
-           </form>
-
-        </section>
-
-        <section class="sidebar">
-            <div id="connect">
-                <h2>Connect with Me</h2>
-                <img src="assets/images/GitHubLogo.png" class="social" alt="GitHub">
-                <img src="assets/images/LinkedIn_logo_initials.png" class="social" alt="LinkedIn">
-                <img src="assets/images/StackOverflowLogo.png" class="social" alt="StackOverflow">
-            </div>
-        </section>
+  <div class="col-3 right">
+    <div class="aside">
+      <h2>Connect with Me</h2>
+      <img src="assets/images/GitHubLogo.png" class="social" alt="GitHub">
+      <img src="assets/images/LinkedIn_logo_initials.png" class="social" alt="LinkedIn">
+      <img src="assets/images/StackOverflowLogo.png" class="social" alt="StackOverflow">
     </div>
+  </div>
+</div>
 
-    <footer>
-        <div class="container">
-            &copy; Copyright 2019 Sally Cardinale
-        </div>
-    </footer>
+<div class="footer">
+  <p>&copy; Copyright</p>
+</div>
+
 </body>
 </html>
